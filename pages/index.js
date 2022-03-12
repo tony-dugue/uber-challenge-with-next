@@ -1,17 +1,17 @@
 import tw from "tailwind-styled-components"
+import Map from './components/Map'
 
 export default function Home() {
   return (
     <Wrapper>
-      <Map>Map</Map>
+      <Map />
       <ActionItems>Start</ActionItems>
     </Wrapper>
   )
 }
 
-const Wrapper = tw.div`flex flex-col h-screen bg-red-300`
-
-const Map = tw.div`bg-red-500 flex-1`
+const Wrapper = tw.div`flex flex-col h-screen`
 
 const ActionItems = tw.div`flex-1`
+
 

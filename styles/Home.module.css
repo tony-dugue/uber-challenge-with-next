@@ -6,19 +6,6 @@
   background-color: blue;
 }
 
-.map {
-  background-color: red;
-  flex: 1;
-}
-
-.start {
-  background-color: green;
-  flex: 1;
-}
-
-
-
-
 .main {
   min-height: 100vh;
   padding: 4rem 0;
