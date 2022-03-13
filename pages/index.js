@@ -9,6 +9,8 @@ export default function Home() {
 
       <ActionItems>
 
+        {/* Header with logo & avatar */}
+
         <Header>
           <UberLogo src="/uber-logo.jpeg" />
 
@@ -17,6 +19,8 @@ export default function Home() {
             <UserImage src="/tony.jpeg"/>
           </Profile>
         </Header>
+
+        {/* Actions Buttons */}
 
         <ActionButtons>
           <ActionButton>
@@ -36,6 +40,8 @@ export default function Home() {
         </ActionButtons>
 
         {/* InputButton */}
+
+        <InputButton>Où aller vous ?</InputButton>
 
       </ActionItems>
 
@@ -58,5 +64,7 @@ flex flex-col flex-1 items-center justify-center bg-gray-200 m-1 h-32 rounded-lg
 transform hover:scale-105 transition
 `
 const ActionButtonImage = tw.img`h-3/5`
+
+const InputButton = tw.div`flex items-center h-20 bg-gray-200 text-2xl p-4 mt-8`
 
 
