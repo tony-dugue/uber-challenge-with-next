@@ -1,5 +1,6 @@
 import tw from "tailwind-styled-components"
 import Map from './components/Map'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -23,10 +24,12 @@ export default function Home() {
         {/* Actions Buttons */}
 
         <ActionButtons>
-          <ActionButton>
-            <ActionButtonImage src="/uberxx.png" />
-            Voiturier
-          </ActionButton>
+          <Link href="/search">
+            <ActionButton>
+              <ActionButtonImage src="/uberxx.png" />
+              Voiturier
+            </ActionButton>
+          </Link>
 
           <ActionButton>
             <ActionButtonImage src="/bike.png" />
