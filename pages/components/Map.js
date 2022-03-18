@@ -23,6 +23,10 @@ const Map = ({ pickupCoordinates, dropoffCoordinates }) => {
     pickupCoordinates ? addToMap(map, pickupCoordinates) : null
     dropoffCoordinates ? addToMap(map, dropoffCoordinates) : null
 
+    if (pickupCoordinates && dropoffCoordinates) {
+      map.fitBounds( [pickupCoordinates, dropoffCoordinates], { padding: 60 } )
+    }
+
   }, [pickupCoordinates, dropoffCoordinates]);
 
   return (
